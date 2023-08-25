@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "52b01a1d-cb58-44d3-bd12-3a25001aa1c4",
+		"name": "Management Participant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26685604"
+	},
+	"item": [
+		{
+			"name": "Get Participant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/participant/view"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Participant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Deisfansha\",\r\n        \"address\": \"\",\r\n        \"phoneNumber\": \"089693871389\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/participants"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Participant",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"dsdsadddss\",\r\n        \"address\": \"daskdasda\",\r\n        \"phoneNumber\": \"089693871389\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/participants/dsdsadddss"
+			},
+			"response": []
+		},
+		{
+			"name": "Soft Delete Participant",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/participants/Deisfansha"
+			},
+			"response": []
+		}
+	]
+}
